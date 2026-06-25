@@ -2,12 +2,12 @@
 #coding: utf-8
 
 #-:-:-:-:-:-:-::-:-:#
-#    XSRF Probe     #
+#   Lulz-CSRF     #
 #-:-:-:-:-:-:-::-:-:#
 
-#Author: 0xInfection
-#This module requires XSRF-Probe
-#https://github.com/0xInfection/XSRF-Probe
+#Author: kroketon lulzbin
+#This module requires Lulz-CSRF
+#https://github.com/lulzbinbashspider/Lulz-CSRF
 
 # Just for some fancy benner to appear at beginning
 
@@ -16,32 +16,61 @@ import time
 
 def banner():
 
-    print('\n\n')
-    time.sleep(0.05)
-    print(color.ORANGE+'     _____       _____       _____      _____       _____                                    ')
-    time.sleep(0.05)
-    print(color.RED+'  __'+color.ORANGE+'|'+color.RED+'__ '+color.ORANGE+'  |_  '+color.RED+'__'+color.ORANGE+'|'+color.RED+'___ '+color.ORANGE+' |_  '+color.RED+'__'+color.ORANGE+'|'+color.RED+'___  '+color.ORANGE+'|_  '+color.RED+'_'+color.ORANGE+'|'+color.RED+'____ '+color.ORANGE+'|_'+color.RED+'   _'+color.ORANGE+'|'+color.RED+'____ '+color.ORANGE+'|_ '+color.RED+' _____   _____  ______  ______  ')
-    time.sleep(0.05)
-    print(color.RED+" \  `  /    "+color.ORANGE+'|'+color.RED+'|   ___|   '+color.ORANGE+'|'+color.RED+'|  _  _|   '+color.ORANGE+'|'+color.RED+'|   ___|  '+color.ORANGE+'| '+color.RED+'|   _  |  '+color.ORANGE+"|"+color.RED+"|  _ ,' /     \|  _   )|   ___| ")
-    time.sleep(0.05)
-    print(color.RED+'  >   <     '+color.ORANGE+'|'+color.RED+' `-.`-.    '+color.ORANGE+'|'+color.RED+'|     \    '+color.ORANGE+'|'+color.RED+'|   ___|  '+color.ORANGE+'|'+color.RED+' |    __|  '+color.ORANGE+'|'+color.RED+'|     \ |  -  || |_  { |   ___| ')
-    time.sleep(0.05)
-    print(color.RED+' /__/__\   '+color.ORANGE+'_|'+color.RED+'|______|  '+color.ORANGE+'_|'+color.RED+'|__|\__\ '+color.ORANGE+' _|'+color.RED+'|___|   '+color.ORANGE+' _|'+color.RED+' |___|   '+color.ORANGE+' _|'+color.RED+'|__|\__\\\_____/|______)|______| ')
-    time.sleep(0.05)
-    print(color.ORANGE+'    |_____|     |_____|     |_____|    |_____|     |_____| \n\n')
-    time.sleep(0.05)
+               ``;`                              
+             `,+@@@+                              
+           .+@@@@@@@;                            
+        `;@@@@@@@@@@@                            
+       +@@@@@@@@@@@@@:                            
+     ;@@@@@@@@@@@@@@@@                            
+   `@@@@@@@@@@@@@@@@@@`                          
+   `@@@@@@@@@@@@@@@@@@#                          
+    .@@@@@@@@@@@@@@@@@@,                          
+     :@@@@@@@@@@@@@@@@@@      .'@@                
+      #@@@@@@@@@@@@@@@@+;  .+@@@@@                
+      `@@@@@@@@@@@@@#;;+@+#@@@#:`                
+       #@@@@@@@@@@';'@@@@@@@:`                    
+       `@@@@@@@+;;+@@@@@##`                      
+        .@@@#;;+@@@@@#+',.,'.                    
+         +;;'#@@@@#+;`      ,:                    
+         .#@@@@#++:  @.    ...`                  
+      `'@@@@#++'. +  .#++;;+  +                  
+    ,@@@@@#++:``::+   `',:+,. ,                  
+  `@@@@#, #+` ',.`'.   +` ``  `,  .+              
+   @@:`  ,+. ,`:``.:   '. .',+++   #              
+   ``    #+`++,.`:,``    :`+@@'@@@@'    ````      
+         #'`#+:`.,`:` .@@@+@#  +`.      :  `:    
+         #:: +.`,.., `@@,#@':. +        :   '    
+         #: ` ',:`,, @#``    + +        ' `,;    
+         #: ` `:''`  @` #:.. , '        #+++:    
+         #: ,     ;#'#  + :   `:         #++      
+         #; '     `''         ,          '.      
+         ;' '                 #         `@#      
+          #.;                ;`       ,#.:;      
+          `+;               '.        @   `      
+           :#;            `@:        :`  `,      
+            .#+;        `'+.'        +            
+              .@++#'+@+@++` ;@.     '            
+               `' ., ` #:`# `+.#+  :.            
+                ., :  @#;.`;`:  `#@.              
+                 +``,.;`@+,. '#                  
+                 @' ' ;`@:+`#`;`                  
+                `#+  ,'`#  :.  '                  
+                ' #.  :`#` '`. +                  
+                # +.  .:+: :`. .                  
+               `, +,   ..+ '`   :                
+               ;` #+@:,:#.;``   '                
+               #'##:#+.  : `;   ;                
+               #. #:      `'`   :                
+                  #,        `   .     
+ ____ _          ___   ____ _    _____  _____ ___           _   _ 
+/ ___ | | ___ __ / _ \ / ___| | _|___ / |_   _/ _ \__      _| \ | |
+| |   | |/ / '__| | | | |   | |/ / |_ \   | || | | \ \ /\ / /  \| |
+| |___|   <| |  | |_| | |___|   < ___) |  | || |_| |\ V  V /| |\  |
+\____ |_|\_\_|   \___/ \____|_|\_\____/___|_| \___/  \_/\_/ |_| \_|  
+                                     |_____|                       
 
-def banabout(): # some fancy banner stuff :p
 
-    print(color.BLUE+'   [---]            '+color.GREY+'XSRF Probe,'+color.RED+' A'+color.ORANGE+' Cross Site Request Forgery '+color.RED+'Audit Toolkit          '+color.BLUE+'[---]')
-    time.sleep(0.1)
-    print(color.BLUE+'   [---]                                                                            [---]')
-    time.sleep(0.1)
-    print(color.BLUE+'   [---]   '+color.PURPLE+'                  '+color.GREEN+'~  Author : '+color.CYAN+'The Infected Drake  ~                 '+color.BLUE+'     [---]')
-    time.sleep(0.1)
-    print(color.BLUE+'   [---]   '+color.CYAN+'                    ~  github.com / '+color.GREY+'0xInfection  ~                     '+color.BLUE+'  [---]')
-    time.sleep(0.1)
-    print(color.BLUE+'   [---]                                                                            [---]')
-    time.sleep(0.1)
-    print(color.BLUE+'   [---]   '+color.ORANGE+'                       ~  Version '+color.RED+open('files/VersionNum').read().strip()+color.ORANGE+'  ~                       '+color.BLUE+'  [---]\n')
-    time.sleep(0.1)
+🅵🆄🅲🅺 🆃🅷🅴 🆂🆈🆂🆃🅴🅼
+
+HⒶcKt1v1st ⒶnⒶrchyst Ⓐn0nym0uS
+ᴡ3 Ⓐʀ3 Ⓐɴ0ɴʏᴍ0ᴜS ᴡ3 Ⓐʀ3 ʟ3ɢ10ɴ, ᴡ3 ᴅ0ɴ’ᴛ ꜰ0ʀɢ1ᴠ3 ᴡ3 ᴅ0ɴ’ᴛ ꜰ0ʀɢ3ᴛ ,3xp3ct uS
