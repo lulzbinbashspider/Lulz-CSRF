@@ -12,10 +12,10 @@
 # Just for some fancy benner to appear at beginning
 
 import time
-from Lulz-CSRF import __version__
-import Lulz-CSRF.core.colors
+from XSRFProbe import __version__
+import XSRFProbe.core.colors
 
-colors = Lulz-CSRF.core.colors.color()
+colors = XSRFProbe.core.colors.color()
 
 SLEEP_TIME = 0
 
